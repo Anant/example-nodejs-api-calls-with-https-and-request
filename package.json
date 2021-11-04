@@ -1,0 +1,25 @@
+{
+    "name": "call-external-api",
+    "version": "1.0.0",
+    "description": "learn how to call an external api using node js.",
+    "main": "app.js",
+    "scripts": {
+      "test": "node app.js"
+    },
+    "keywords": [
+      "nodejs",
+      "api",
+      "call",
+      "rest",
+      "nicholas",
+      "brackley",
+      "node",
+      "web",
+      "api"
+    ],
+    "author": "Nicholas Brackley (sniffer)",
+    "license": "",
+    "dependencies": {
+      "request": "^2.87.0"
+    }
+  }
