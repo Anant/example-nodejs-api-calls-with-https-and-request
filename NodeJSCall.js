@@ -1,10 +1,10 @@
 const https = require('https');
 
-//_EXTERNAL_URL = 'https://api.weather.gov/gridpoints/TOP/31,80/forecast';
 const options = {
     hostname: 'api.weather.gov',
-    path: '/gridpoints/TOP/31,80/forecast',
-    headers: {'User-Agent': 'Nick-Brack: (Anant, nicholas.brackley@anant.us)'}
+    path: '/gridpoints/TOP/96,70/forecast',
+//put your unique ID in the line below to implement the User-Agent header
+    headers: {'User-Agent': '<uniqueID>: (Anant, nicholas.brackley@anant.us)'}
 }
 
 const callExternalApiUsingHttp = (callback) => {
@@ -19,7 +19,6 @@ const callExternalApiUsingHttp = (callback) => {
     // The whole response has been received. Print out the result.
     resp.on('end', () => {
         return callback(data);
-       // console.log(JSON.stringify(data));
     });
 
     }).on("error", (err) => {
