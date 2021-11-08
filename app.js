@@ -1,10 +1,11 @@
-//Nick-Brack: (anant.co, nicholas.brackley@anant.us)
-
+//Lines that initialize the code sources from other files in the program
 const apiCallFromRequest = require('./Request')
 const apiCallFromNode = require('./NodeJsCall')
 
+//Line that initialize a code library
 const http = require('http')
 
+//CreateServer... creates a server. The if statements below define the endpoints of the server
 http.createServer((req,res) => {
     if(req.url === "/request"){
         apiCallFromRequest.callApi(function(response){
@@ -20,6 +21,7 @@ http.createServer((req,res) => {
     }
 
     // res.end();
+//Code line specifies the listenting port
 }).listen(3000);
 
 console.log("service running on 3000 port...."); 
