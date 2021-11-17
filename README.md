@@ -40,7 +40,7 @@ To correct that you'll have to make some changes in the NodeJSCall.js file
 
 ### 1.2.6 Make sure to kill the server running on your terminal by hitting cntrl+C
 
-## 2.1 Configure the user-agent agent header
+## 2.1 Configure the User-agent agent header
 ### 2.1.2 In the NodeJSCall.js file on line 7, change the uniqueID to something of yours, and add your email address.
 - This effectively allows the api to know and track who is making calls to their interface
 - Your unique ID can be anything, it doesn't need to identify you. Your github username is a good default.
